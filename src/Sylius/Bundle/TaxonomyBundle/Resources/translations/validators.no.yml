@@ -10,6 +10,8 @@ sylius:
         name:
             max_length: Taksonominavn kan ikke være lengre enn 255 tegn.
             not_blank: Angi taksonominavn.
+        parent:
+            invalid_relation: 'Forelder må verken være taksonet selv eller noen av dets etterkommere.'
     taxonomy:
         name:
             max_length: Taksonominavn kan ikke være lengre enn 255 tegn.
